@@ -18,7 +18,8 @@ mono_crash.*
 
 # Build results
 # Игнорирование папки Debug
-HoneyShop/Backend/HoneyShop.Api/bin/Debug/
+# Игнорирование всех папок bin внутри любой папки Backend
+**/Backend/**/bin/
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
