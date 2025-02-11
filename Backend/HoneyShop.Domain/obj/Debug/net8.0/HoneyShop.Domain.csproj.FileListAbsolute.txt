@@ -10,3 +10,15 @@ C:\Users\a.samoshuk\RiderProjects\HoneyShop\HoneyShop.Domain\obj\Debug\net8.0\re
 C:\Users\a.samoshuk\RiderProjects\HoneyShop\HoneyShop.Domain\obj\Debug\net8.0\HoneyShop.Domain.pdb
 C:\Users\a.samoshuk\RiderProjects\HoneyShop\HoneyShop.Domain\obj\Debug\net8.0\ref\HoneyShop.Domain.dll
 C:\Users\a.samoshuk\RiderProjects\HoneyShop\HoneyShop.Domain\obj\Debug\net8.0\HoneyShop.Domain.sourcelink.json
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\Backend\HoneyShop.Domain\bin\Debug\net8.0\HoneyShop.Domain.deps.json
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\Backend\HoneyShop.Domain\bin\Debug\net8.0\HoneyShop.Domain.dll
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\Backend\HoneyShop.Domain\bin\Debug\net8.0\HoneyShop.Domain.pdb
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\Backend\HoneyShop.Domain\obj\Debug\net8.0\HoneyShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\Backend\HoneyShop.Domain\obj\Debug\net8.0\HoneyShop.Domain.AssemblyInfoInputs.cache
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\Backend\HoneyShop.Domain\obj\Debug\net8.0\HoneyShop.Domain.AssemblyInfo.cs
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\Backend\HoneyShop.Domain\obj\Debug\net8.0\HoneyShop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\Backend\HoneyShop.Domain\obj\Debug\net8.0\HoneyShop.Domain.sourcelink.json
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\Backend\HoneyShop.Domain\obj\Debug\net8.0\HoneyShop.Domain.dll
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\Backend\HoneyShop.Domain\obj\Debug\net8.0\refint\HoneyShop.Domain.dll
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\Backend\HoneyShop.Domain\obj\Debug\net8.0\HoneyShop.Domain.pdb
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\Backend\HoneyShop.Domain\obj\Debug\net8.0\ref\HoneyShop.Domain.dll

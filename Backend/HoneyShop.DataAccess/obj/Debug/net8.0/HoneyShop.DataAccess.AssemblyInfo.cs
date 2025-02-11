@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HoneyShop.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac4fd8e5124d03a55d0fe72f6f73d38a3344768e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+666f3d535bb65a5b21ff6ed08ec7997f609626d5")]
 [assembly: System.Reflection.AssemblyProductAttribute("HoneyShop.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HoneyShop.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
