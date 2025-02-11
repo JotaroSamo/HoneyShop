@@ -398,3 +398,56 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+# Rider specifics
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# User-specific files
+*.iml
+
+# Output directories
+bin/
+obj/
+
+# Rider-specific files
+.idea/
+*.sln.iml
+.idea/
+.idea_modules/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/libraries/
+.idea/vcs.xml
+.idea/.rider/
+
+# Rider specific caches & system
+.idea/workspace.xml
+.idea/task.xml
+
+# Exclude build artefacts and generated files
+*.dll
+*.exe
+*.exe.config
+*.pdb
+*.mdb
+*.opendb
+*.pyc
+*.sln.docstates
+*.config
+
+# Ignore test results
+TestResults/
+
+# Project files
+.vscode/
+.vs/
+*.user
+*.suo
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
