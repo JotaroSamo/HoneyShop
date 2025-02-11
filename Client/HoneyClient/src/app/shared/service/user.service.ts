@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { CreateUser, CreateUserAdminRoot, UpdatePasswordUser, UpdateUser, UserItem } from '../interface/user/User';
+import { CreateUser, CreateUserAdminRoot, UpdatePasswordUser, UpdateUser, UserItem } from '../../data/interface/user/User';
 import { environment } from '../../constant/enviroment';
-import { PaginationListModel } from '../interface/PaginationListModel';
-import { Role } from '../enum/Role';
+import { PaginationListModel } from '../../data/interface/PaginationListModel';
+import { Role } from '../../data/enum/Role';
 
 
 

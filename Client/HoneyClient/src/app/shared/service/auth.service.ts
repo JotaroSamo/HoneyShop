@@ -1,7 +1,7 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { JwtModel } from '../interface/auth/JwtModel';
-import { LoginUser } from '../interface/auth/LoginUser';
+import { JwtModel } from '../../data/interface/auth/JwtModel';
+import { LoginUser } from '../../data/interface/auth/LoginUser';
 import { Observable } from 'rxjs/internal/Observable';
 import { environment } from '../../constant/enviroment';
 import { catchError, tap, throwError } from 'rxjs';

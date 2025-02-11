@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { AuthService } from '../../data/service/auth.service';
+import { AuthService } from '../../shared/service/auth.service';
 import {MatToolbarModule} from '@angular/material/toolbar'; 
 import { Router, RouterLink } from '@angular/router';
 

@@ -5,7 +5,7 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule, FormControl, F
 
 import { LoginUser } from '../../../data/interface/auth/LoginUser'; 
 import { Router } from '@angular/router';
-import { AuthService } from '../../../data/service/auth.service';
+import { AuthService } from '../../../shared/service/auth.service';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 import { MatSnackBar } from '@angular/material/snack-bar'; // Для отображения уведомлений
-import { UserService } from '../../../data/service/user.service';
+import { UserService } from '../../../shared/service/user.service';
 import { CreateUser } from '../../../data/interface/user/User';
 import { CommonModule } from '@angular/common';
 import { MatInputModule } from '@angular/material/input';
