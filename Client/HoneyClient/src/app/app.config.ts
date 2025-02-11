@@ -7,7 +7,13 @@ import { provideClientHydration, withEventReplay } from '@angular/platform-brows
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { AuthInterceptor } from './shared/auth.interceptor';
 
+const AUTH_INTERCEPTOR = {
+  provide: HTTP_INTERCEPTORS,
+  useClass: AuthInterceptor,
+  multi: true
+};
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
@@ -16,6 +22,6 @@ export const appConfig: ApplicationConfig = {
     importProvidersFrom(ReactiveFormsModule),
     provideHttpClient(withInterceptorsFromDi()),
     provideAnimationsAsync(),
-    importProvidersFrom(MatToolbarModule, MatButtonModule)
+    importProvidersFrom(MatToolbarModule, MatButtonModule), AUTH_INTERCEPTOR
   ]
 };

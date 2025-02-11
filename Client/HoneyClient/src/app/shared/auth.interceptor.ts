@@ -22,7 +22,7 @@ import { AuthService } from '../data/service/auth.service';
   
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
   
-      console.log("AuthInterceptor works!!!");
+    
       
   
       req = req.clone({

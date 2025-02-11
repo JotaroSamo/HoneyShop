@@ -1,11 +1,11 @@
 <mat-toolbar  color="primary">
     <div class="toolbar-content">
-      <span>Нектар Полесья</span>
-      <img src="icon.jpg" alt="Логотип" class="logo">
+        <img routerLink="/" src="icon.jpg" alt="Логотип" class="logo">
+
     </div>
   
     <span class="spacer"></span>
-  
+    <a mat-button routerLink="/products">Продукты</a>
     @if (!isAuthenticated()) {
       <a mat-button routerLink="/login">Вход</a>
       <a mat-button routerLink="/register">Регистрация</a>
