@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HoneyShop.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+666f3d535bb65a5b21ff6ed08ec7997f609626d5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca97807ca906858cc12221aa54ab295d31e6a3de")]
 [assembly: System.Reflection.AssemblyProductAttribute("HoneyShop.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HoneyShop.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
