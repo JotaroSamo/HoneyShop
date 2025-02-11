@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HoneyShop.Mapping")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48861c8f32bd5d861dd1c0e04ceb70a20b1793cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("HoneyShop.Mapping")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HoneyShop.Mapping")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
