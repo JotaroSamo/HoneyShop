@@ -5,7 +5,7 @@ import { LoginUser } from '../interface/auth/LoginUser';
 import { Observable } from 'rxjs/internal/Observable';
 import { environment } from '../../constant/enviroment';
 import { catchError, tap, throwError } from 'rxjs';
-import {jwtDecode} from 'jwt-decode';
+import { JwtHelperService } from '@auth0/angular-jwt'
 
 
 
@@ -16,7 +16,8 @@ export class AuthService {
 
   private apiUrl = environment.apiUrl;
 
-  constructor(private http: HttpClient) { }
+
+  constructor(private http: HttpClient, private jwtHelper: JwtHelperService) { }
   private static setToken(tokenPair: JwtModel | null): void {
     if (tokenPair) {
       localStorage.setItem('token', tokenPair.token);
@@ -40,7 +41,15 @@ export class AuthService {
     }
     return localStorage.getItem('token');
   }
- 
+  getRole(token: string | null): string | null {
+    if(token!=null)
+    {
+      const decodedToken = this.jwtHelper.decodeToken(token);
+      return decodedToken?.role || null;
+    }
+    return null;
+    
+  }
 
   get expiredAt(): Date {
     const expDate = localStorage.getItem('token-exp');

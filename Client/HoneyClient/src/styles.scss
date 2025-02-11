@@ -1,8 +1,8 @@
 /* Основные цвета */
 :root {
-    --primary-color: #f8c90a; // Основной цвет (коричневый, как мёд)
-    --secondary-color: #ffda7b; // Акцентный цвет (золотой)
-    --background-color: #f8f4ee; // Фоновый цвет (светлый)
+    --primary-color: #f8c90a; // Основной цвет (желтый, как мёд)
+    --secondary-color: #fcb400; // Акцентный цвет (золотой)
+    --background-color: #a39683; // Фоновый цвет (светлый)
     --text-color: #333; // Цвет текста
     --light-text-color: #fff; // Белый текст
   }
@@ -30,7 +30,7 @@
   /* Стили для кнопок */
   button {
     background-color: var(--primary-color);
-    color: var(--light-text-color);
+    color: var(--text-color);
     border: none;
     padding: 10px 20px;
     border-radius: 4px;

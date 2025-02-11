@@ -22,7 +22,7 @@ mat-toolbar {
       .title {
         font-size: 2rem;
         font-weight: bold;
-        color: #fff;
+        color: var(--text-color);
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Тень текста
         font-family: 'Arial', sans-serif; // Шрифт
         margin-right: 1rem;
@@ -41,7 +41,7 @@ mat-toolbar {
     }
   
     a {
-      color: white; // Белый текст для ссылок
+        color: var(--text-color);
       text-decoration: none; // Убираем подчеркивание
       font-size: 16px;
       font-weight: 400;
