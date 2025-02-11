@@ -1,0 +1,13 @@
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\HoneyShop.Application.Core\bin\Debug\net8.0\HoneyShop.Application.Core.deps.json
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\HoneyShop.Application.Core\bin\Debug\net8.0\HoneyShop.Application.Core.dll
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\HoneyShop.Application.Core\bin\Debug\net8.0\HoneyShop.Application.Core.pdb
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\HoneyShop.Application.Core\obj\Debug\net8.0\HoneyShop.Application.Core.csproj.AssemblyReference.cache
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\HoneyShop.Application.Core\obj\Debug\net8.0\HoneyShop.Application.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\HoneyShop.Application.Core\obj\Debug\net8.0\HoneyShop.Application.Core.AssemblyInfoInputs.cache
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\HoneyShop.Application.Core\obj\Debug\net8.0\HoneyShop.Application.Core.AssemblyInfo.cs
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\HoneyShop.Application.Core\obj\Debug\net8.0\HoneyShop.Application.Core.csproj.CoreCompileInputs.cache
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\HoneyShop.Application.Core\obj\Debug\net8.0\HoneyShop.Application.Core.sourcelink.json
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\HoneyShop.Application.Core\obj\Debug\net8.0\HoneyShop.Application.Core.dll
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\HoneyShop.Application.Core\obj\Debug\net8.0\refint\HoneyShop.Application.Core.dll
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\HoneyShop.Application.Core\obj\Debug\net8.0\HoneyShop.Application.Core.pdb
+C:\Users\a.samoshuk\RiderProjects\HoneyShop\HoneyShop.Application.Core\obj\Debug\net8.0\ref\HoneyShop.Application.Core.dll

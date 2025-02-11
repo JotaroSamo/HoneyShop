@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\HoneyShop.Application.Core\HoneyShop.Application.Core.csproj" />
+      <ProjectReference Include="..\HoneyShop.BusinessLogic\HoneyShop.BusinessLogic.csproj" />
+    </ItemGroup>
+
+</Project>
