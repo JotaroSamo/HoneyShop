@@ -1,0 +1,44 @@
+
+mat-toolbar {
+    background: linear-gradient(135deg, #3f51b5, #2196f3); // Градиент для фона
+    color: white; // Белый текст
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Тень для глубины
+    padding: 0 24px;  // Отступы по бокам
+  
+    .toolbar-content {
+      display: flex;
+      align-items: center;
+      gap: 16px; // Расстояние между элементами
+  
+      span {
+        font-size: 24px; // Увеличенный размер текста
+        font-weight: 500; // Полужирный шрифт
+        font-family: 'Roboto', sans-serif; // Современный шрифт
+      }
+  
+      .logo {
+        width: 40px; // Размер логотипа
+        height: 40px;
+        border-radius: 50%; // Круглый логотип
+        border: 2px solid white; // Белая рамка
+      }
+    } 
+  
+    .spacer {
+      flex: 1 1 auto; // Растягиваемый элемент для выравнивания
+    }
+  
+    a {
+      color: white; // Белый текст для ссылок
+      text-decoration: none; // Убираем подчеркивание
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0 8px; // Отступы между ссылками
+      transition: all 0.3s ease; // Плавный переход
+  
+      &:hover {
+        color: #ffeb3b; // Желтый цвет при наведении
+        transform: scale(1.05); // Увеличение при наведении
+      }
+    }
+  }
