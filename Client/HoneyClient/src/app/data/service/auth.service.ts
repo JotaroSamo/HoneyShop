@@ -57,7 +57,7 @@ export class AuthService {
   }
   
   login(user: LoginUser): Observable<JwtModel> {
-    return this.http.post<JwtModel>(`${this.apiUrl}auth/login`, user)
+    return this.http.post<JwtModel>(`${this.apiUrl}Auth/login`, user)
     .pipe(
       tap(token => AuthService.setToken(token)),
       catchError(AuthService.handleError.bind(this))
