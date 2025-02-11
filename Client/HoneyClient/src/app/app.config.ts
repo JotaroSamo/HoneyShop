@@ -9,7 +9,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { AuthInterceptor } from './shared/auth.interceptor';
 import { JwtHelperService, JWT_OPTIONS } from '@auth0/angular-jwt';
-
+import { MatMenuModule } from '@angular/material/menu';
 const AUTH_INTERCEPTOR = {
   provide: HTTP_INTERCEPTORS,
   useClass: AuthInterceptor,
@@ -36,7 +36,7 @@ export const appConfig: ApplicationConfig = {
       useValue: {
         tokenGetter: tokenGetter,
       }
-    }
+    }, MatMenuModule
   ]
 };
 
