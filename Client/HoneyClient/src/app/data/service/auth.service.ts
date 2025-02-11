@@ -41,12 +41,13 @@ export class AuthService {
     }
     return localStorage.getItem('token');
   }
-  getRole(token: string | null): string | null {
-    if(token!=null)
+  getRole(): string | null {
+    if(this.token!=null)
     {
-      const decodedToken = this.jwtHelper.decodeToken(token);
+      const decodedToken = this.jwtHelper.decodeToken(this.token);
       return decodedToken?.role || null;
     }
+    this.logout()
     return null;
     
   }
