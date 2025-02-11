@@ -59,6 +59,7 @@ void ConfigureServices(IServiceCollection services, IConfiguration configuration
     services.AddSwaggerGen();
 
 }
+ 
 
 // Метод для настройки CORS
 void ConfigureCors(IServiceCollection services, IConfiguration configuration)
