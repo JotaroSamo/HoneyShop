@@ -8,12 +8,18 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { AuthInterceptor } from './shared/auth.interceptor';
+import { JwtHelperService, JWT_OPTIONS } from '@auth0/angular-jwt';
 
 const AUTH_INTERCEPTOR = {
   provide: HTTP_INTERCEPTORS,
   useClass: AuthInterceptor,
   multi: true
 };
+
+export function tokenGetter() {
+  return localStorage.getItem('token');
+}
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
@@ -22,6 +28,15 @@ export const appConfig: ApplicationConfig = {
     importProvidersFrom(ReactiveFormsModule),
     provideHttpClient(withInterceptorsFromDi()),
     provideAnimationsAsync(),
-    importProvidersFrom(MatToolbarModule, MatButtonModule), AUTH_INTERCEPTOR
+    importProvidersFrom(MatToolbarModule, MatButtonModule),
+    AUTH_INTERCEPTOR,
+    JwtHelperService,
+    {
+      provide: JWT_OPTIONS,
+      useValue: {
+        tokenGetter: tokenGetter,
+      }
+    }
   ]
 };
+

@@ -1,1 +1,104 @@
-<p>user-create works!</p>
+<div class="registration-container">
+    <h2>Регистрация</h2>
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+      <!-- Поле для имени пользователя -->
+      <mat-form-field appearance="fill">
+        <mat-label>Имя пользователя</mat-label>
+        <input
+          matInput
+          id="username"
+          formControlName="username"
+          placeholder="Введите имя пользователя"
+        />
+        <mat-error *ngIf="registrationForm.get('username')?.invalid">
+          Имя пользователя обязательно и должно содержать минимум 3 символа.
+        </mat-error>
+      </mat-form-field>
+  
+      <!-- Поле для полного имени -->
+      <mat-form-field appearance="fill">
+        <mat-label>Полное имя</mat-label>
+        <input
+          matInput
+          id="fullName"
+          formControlName="fullName"
+          placeholder="Введите ваше полное имя"
+        />
+        <mat-error *ngIf="registrationForm.get('fullName')?.invalid">
+          Полное имя обязательно.
+        </mat-error>
+      </mat-form-field>
+  
+      <!-- Поле для номера телефона -->
+      <mat-form-field appearance="fill">
+        <mat-label>Номер телефона</mat-label>
+        <input
+          matInput
+          id="phoneNumber"
+          formControlName="phoneNumber"
+          placeholder="Введите номер телефона"
+        />
+        <mat-error *ngIf="registrationForm.get('phoneNumber')?.invalid">
+          Номер телефона обязателен и должен быть корректным.
+        </mat-error>
+      </mat-form-field>
+  
+      <!-- Поле для пароля -->
+      <mat-form-field appearance="fill">
+        <mat-label>Пароль</mat-label>
+        <input
+          matInput
+          id="password"
+          [type]="hidePassword ? 'password' : 'text'"
+          formControlName="password"
+          placeholder="Введите пароль"
+        />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hidePassword = !hidePassword"
+          [attr.aria-label]="'Скрыть пароль'"
+          [attr.aria-pressed]="hidePassword"
+        >
+          <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+        <mat-error *ngIf="registrationForm.get('password')?.invalid">
+          Пароль обязателен и должен содержать минимум 6 символов.
+        </mat-error>
+      </mat-form-field>
+  
+      <!-- Поле для подтверждения пароля -->
+      <mat-form-field appearance="fill">
+        <mat-label>Подтвердите пароль</mat-label>
+        <input
+          matInput
+          id="confirmPassword"
+          [type]="hideConfirmPassword ? 'password' : 'text'"
+          formControlName="confirmPassword"
+          placeholder="Подтвердите пароль"
+        />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hideConfirmPassword = !hideConfirmPassword"
+          [attr.aria-label]="'Скрыть пароль'"
+          [attr.aria-pressed]="hideConfirmPassword"
+        >
+          <mat-icon>{{ hideConfirmPassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+        <mat-error *ngIf="registrationForm.get('confirmPassword')?.invalid">
+          Пароли не совпадают.
+        </mat-error>
+      </mat-form-field>
+  
+      <!-- Кнопка отправки формы -->
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        [disabled]="registrationForm.invalid"
+      >
+        Зарегистрироваться
+      </button>
+    </form>
+  </div>

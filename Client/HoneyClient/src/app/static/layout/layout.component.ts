@@ -9,11 +9,9 @@ import { FooterComponent } from "../footer/footer.component";
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss'
 })
-export class LayoutComponent implements OnInit {
+export class LayoutComponent {
  
  
-  ngOnInit(): void {
 
-  }
 
 }
