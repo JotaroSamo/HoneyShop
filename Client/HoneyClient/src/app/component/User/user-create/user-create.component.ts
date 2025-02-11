@@ -9,10 +9,11 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
+import { MatFormField } from '@angular/material/input';
 
 @Component({
   selector: 'app-user-create',
-   imports: [CommonModule, ReactiveFormsModule, MatInputModule, MatButtonModule, MatCardModule, MatIconModule],
+   imports: [CommonModule, ReactiveFormsModule, MatInputModule, MatButtonModule, MatCardModule, MatIconModule, MatFormField],
   templateUrl: './user-create.component.html',
   styleUrls: ['./user-create.component.scss'],
 })

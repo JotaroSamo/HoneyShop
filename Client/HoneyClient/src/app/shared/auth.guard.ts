@@ -26,7 +26,7 @@ import { AuthService } from '../data/service/auth.service';
     }
    
   checkRoles(acceptedRoles: string[]): boolean {
-    const userRole = this.authService.getRole();
+    const userRole = this.authService.getUserRole();
     return userRole ? acceptedRoles.includes(userRole) : false;
   }
   

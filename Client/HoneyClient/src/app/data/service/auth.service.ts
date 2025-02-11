@@ -41,15 +41,36 @@ export class AuthService {
     }
     return localStorage.getItem('token');
   }
-  getRole(): string | null {
-    if(this.token!=null)
-    {
-      const decodedToken = this.jwtHelper.decodeToken(this.token);
-      return decodedToken?.role || null;
+  getUserRole(): string | null {
+    const token = this.token;
+    if (token) {
+      const decodedToken = this.jwtHelper.decodeToken(token);
+      return decodedToken['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'] || null;
     }
-    this.logout()
+    this.logout();
     return null;
-    
+  }
+
+  // Метод для получения имени пользователя из токена
+  getUserName(): string | null {
+    const token = this.token;
+    if (token) {
+      const decodedToken = this.jwtHelper.decodeToken(token);
+      return decodedToken['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name'] || null;
+    }
+    this.logout();
+    return null;
+  }
+
+  // Метод для получения идентификатора пользователя из токена
+  getUserId(): string | null {
+    const token = this.token;;
+    if (token) {
+      const decodedToken = this.jwtHelper.decodeToken(token);
+      return decodedToken['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier'] || null;
+    }
+    this.logout();
+    return null;
   }
 
   get expiredAt(): Date {
