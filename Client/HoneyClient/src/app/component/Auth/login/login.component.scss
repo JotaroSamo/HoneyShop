@@ -1,0 +1,45 @@
+/* Стили для mat-card */
+mat-card {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+/* Стили для заголовка */
+mat-card h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Стили для формы */
+.form_login {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для mat-form-field */
+mat-form-field {
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+
+/* Стили для input */
+mat-form-field input {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border-radius: 4px;
+}
+
+/* Стили для mat-label */
+
+mat-error {
+    color: #d32f2f;
+    font-size: 0.875rem;
+}

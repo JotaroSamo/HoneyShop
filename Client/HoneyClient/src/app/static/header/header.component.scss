@@ -1,14 +1,17 @@
-
 mat-toolbar {
-    background: linear-gradient(135deg, #3f51b5, #2196f3); // Градиент для фона
-    color: white; // Белый текст
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Тень для глубины
-    padding: 0 24px;  // Отступы по бокам
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0 24px; // Отступы по бокам
+    height: 80px; // Фиксированная высота тулбара
+    display: flex;
+    align-items: center; // Выравнивание элементов по центру по вертикали
   
     .toolbar-content {
       display: flex;
       align-items: center;
       gap: 16px; // Расстояние между элементами
+      height: 100%; // Занимает всю высоту тулбара
   
       span {
         font-size: 24px; // Увеличенный размер текста
@@ -16,20 +19,29 @@ mat-toolbar {
         font-family: 'Roboto', sans-serif; // Современный шрифт
       }
   
-      .logo {
-        width: 40px; // Размер логотипа
-        height: 40px;
-        border-radius: 50%; // Круглый логотип
-        border: 2px solid white; // Белая рамка
+      .title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--text-color);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Тень текста
+        font-family: 'Arial', sans-serif; // Шрифт
+        margin-right: 1rem;
       }
-    } 
+  
+      .logo {
+        width: 80px; // Размер логотипа
+        height: 80px;
+        object-fit: contain; // Изображение не выходит за пределы
+        border-radius: 50%; // Круглый логотип (опционально)
+      }
+    }
   
     .spacer {
       flex: 1 1 auto; // Растягиваемый элемент для выравнивания
     }
   
     a {
-      color: white; // Белый текст для ссылок
+        color: var(--text-color);
       text-decoration: none; // Убираем подчеркивание
       font-size: 16px;
       font-weight: 400;
@@ -39,6 +51,56 @@ mat-toolbar {
       &:hover {
         color: #ffeb3b; // Желтый цвет при наведении
         transform: scale(1.05); // Увеличение при наведении
+      }
+    }
+  }
+  
+  /* Адаптивность для мобильных устройств */
+  @media (max-width: 768px) {
+    mat-toolbar {
+      padding: 0 12px; // Уменьшаем отступы на мобильных устройствах
+      height: 60px; // Уменьшаем высоту тулбара
+  
+      .toolbar-content {
+        gap: 8px; // Уменьшаем расстояние между элементами
+  
+        .title {
+          font-size: 1.5rem; // Уменьшаем размер заголовка
+        }
+  
+        .logo {
+          width: 40px; // Уменьшаем размер логотипа
+          height: 40px;
+        }
+      }
+  
+      a {
+        font-size: 14px; // Уменьшаем размер шрифта для ссылок
+        margin: 0 4px; // Уменьшаем отступы между ссылками
+      }
+    }
+  }
+  
+  /* Адаптивность для очень маленьких экранов */
+  @media (max-width: 480px) {
+    mat-toolbar {
+      padding: 0 8px; // Еще меньше отступов
+      height: 50px; // Еще меньше высота тулбара
+  
+      .toolbar-content {
+        .title {
+          font-size: 1.2rem; // Еще меньше размер заголовка
+        }
+  
+        .logo {
+          width: 30px; // Еще меньше размер логотипа
+          height: 30px;
+        }
+      }
+  
+      a {
+        font-size: 12px; // Еще меньше размер шрифта для ссылок
+        margin: 0 2px; // Еще меньше отступы между ссылками
       }
     }
   }

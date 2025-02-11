@@ -1,0 +1,78 @@
+/* Основные цвета */
+:root {
+    --primary-color: #f8c90a; // Основной цвет (желтый, как мёд)
+    --secondary-color: #fcb400; // Акцентный цвет (золотой)
+    --background-color: #a39683; // Фоновый цвет (светлый)
+    --text-color: #333; // Цвет текста
+    --light-text-color: #fff; // Белый текст
+  }
+  
+  /* Общие стили для body */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; // Современный шрифт
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  /* Стили для ссылок */
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: var(--secondary-color);
+    }
+  }
+  
+  /* Стили для кнопок */
+  button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: var(--secondary-color);
+    }
+  }
+  
+  /* Стили для заголовков */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-family: 'Playfair Display', serif; // Элегантный шрифт для заголовков
+  }
+  
+  /* Стили для карточек товаров */
+  .product-card {
+    background-color: var(--light-text-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  
+    h3 {
+      margin: 12px 0;
+      font-size: 20px;
+    }
+  
+    p {
+      color: var(--text-color);
+    }
+  }
+  
+

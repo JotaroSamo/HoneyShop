@@ -1,15 +1,15 @@
-<div>
-    <mat-card class="mat-background">
+
+    <mat-card>
       <h2>Вход</h2>
       <form class="form_login" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-        <mat-form-field>
-          <mat-label>Никнейм</mat-label>
+        <mat-form-field appearance="outline">
+          <mat-label>Логин</mat-label>
           <input matInput id="login" formControlName="UserName" [errorStateMatcher]="matcher" type="text" />
           <mat-error *ngIf="loginForm.get('login')?.hasError('required')">
             Логин обязателен
           </mat-error>
-        </mat-form-field>
-        <mat-form-field>
+        </mat-form-field >
+        <mat-form-field appearance="outline">
           <mat-label>Пароль</mat-label>
           <input matInput id="password" formControlName="password" [errorStateMatcher]="matcher" type="password" />
           <mat-error *ngIf="loginForm.get('password')?.hasError('required')">
@@ -19,5 +19,5 @@
         <button style="margin-top: 15px;" type="submit" (click)="onSubmit()" [disabled]="!loginForm.valid">Войти</button>
       </form>
     </mat-card>
-  </div>
+
   

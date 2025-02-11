@@ -1,17 +1,24 @@
-<mat-toolbar  color="primary">
+<mat-toolbar color="primary">
     <div class="toolbar-content">
-      <span>Нектар Полесья</span>
-      <img src="icon.jpg" alt="Логотип" class="logo">
+      <img routerLink="/" src="icon.jpg" alt="Логотип" class="logo" />
     </div>
   
     <span class="spacer"></span>
+    <a mat-button routerLink="/products">Продукты</a>
   
     @if (!isAuthenticated()) {
       <a mat-button routerLink="/login">Вход</a>
       <a mat-button routerLink="/register">Регистрация</a>
     }
     @else if (isAuthenticated()) {
-      <a mat-button routerLink="/" (click)="logout()">Выход</a>
+      <a mat-button [matMenuTriggerFor]="userMenu">
+        {{ getUserName() }}
+      </a>
+      <mat-menu #userMenu="matMenu">
+        <button mat-menu-item routerLink="/profile">Профиль</button>
+        <button mat-menu-item routerLink="/settings">Настройки</button>
+        <button mat-menu-item (click)="logout()">Выход</button>
+      </mat-menu>
     }
   </mat-toolbar>
   

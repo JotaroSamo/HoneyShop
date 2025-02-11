@@ -1,11 +1,11 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { JwtModel } from '../interface/auth/JwtModel';
-import { LoginUser } from '../interface/auth/LoginUser';
+import { JwtModel } from '../../data/interface/auth/JwtModel';
+import { LoginUser } from '../../data/interface/auth/LoginUser';
 import { Observable } from 'rxjs/internal/Observable';
 import { environment } from '../../constant/enviroment';
 import { catchError, tap, throwError } from 'rxjs';
-import {jwtDecode} from 'jwt-decode';
+import { JwtHelperService } from '@auth0/angular-jwt'
 
 
 
@@ -16,7 +16,8 @@ export class AuthService {
 
   private apiUrl = environment.apiUrl;
 
-  constructor(private http: HttpClient) { }
+
+  constructor(private http: HttpClient, private jwtHelper: JwtHelperService) { }
   private static setToken(tokenPair: JwtModel | null): void {
     if (tokenPair) {
       localStorage.setItem('token', tokenPair.token);
@@ -40,7 +41,37 @@ export class AuthService {
     }
     return localStorage.getItem('token');
   }
- 
+  getUserRole(): string | null {
+    const token = this.token;
+    if (token) {
+      const decodedToken = this.jwtHelper.decodeToken(token);
+      return decodedToken['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'] || null;
+    }
+    this.logout();
+    return null;
+  }
+
+  // Метод для получения имени пользователя из токена
+  getUserName(): string | null {
+    const token = this.token;
+    if (token) {
+      const decodedToken = this.jwtHelper.decodeToken(token);
+      return decodedToken['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name'] || null;
+    }
+    this.logout();
+    return null;
+  }
+
+  // Метод для получения идентификатора пользователя из токена
+  getUserId(): string | null {
+    const token = this.token;;
+    if (token) {
+      const decodedToken = this.jwtHelper.decodeToken(token);
+      return decodedToken['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier'] || null;
+    }
+    this.logout();
+    return null;
+  }
 
   get expiredAt(): Date {
     const expDate = localStorage.getItem('token-exp');
