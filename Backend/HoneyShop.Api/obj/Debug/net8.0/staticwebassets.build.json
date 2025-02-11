@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "NoyPeQzIi57MrDffANu1XSZitmqdkMLAJcmL17ods2w=",
+  "Source": "HoneyShop.Api",
+  "BasePath": "_content/HoneyShop.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

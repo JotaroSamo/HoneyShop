@@ -1,0 +1,43 @@
+# Общие игнорируемые файлы
+.DS_Store
+*.log
+*.tmp
+
+# Игнорируемые файлы и папки для ASP.NET
+.vscode/
+.vs/
+**/bin/
+**/obj/
+**/*.user
+**/*.suo
+packages/
+*.nupkg
+*.snupkg
+*.nuspec
+
+# Игнорируемые файлы и папки для клиента Angular
+node_modules/
+dist/
+build/
+tmp/
+*.tsbuildinfo
+
+# Игнорируемые файлы и папки для общего проекта
+.env
+.idea/
+*.iml
+out/
+*.bak
+*.backup
+*.swp
+*.swo
+
+# Лог-файлы
+*.log
+
+# Временные файлы
+*.tmp
+*.temp
+
+# Временные папки тестирования и кэша
+/.angular/cache/
