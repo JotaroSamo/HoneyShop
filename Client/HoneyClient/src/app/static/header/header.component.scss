@@ -1,8 +1,8 @@
 
 mat-toolbar {
-    background: linear-gradient(135deg, #3f51b5, #2196f3); // Градиент для фона
-    color: white; // Белый текст
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Тень для глубины
+    background-color: var(--primary-color);
+  color: var(--light-text-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 0 24px;  // Отступы по бокам
   
     .toolbar-content {
