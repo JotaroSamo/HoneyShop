@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HoneyShop.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48861c8f32bd5d861dd1c0e04ceb70a20b1793cb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac4fd8e5124d03a55d0fe72f6f73d38a3344768e")]
 [assembly: System.Reflection.AssemblyProductAttribute("HoneyShop.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HoneyShop.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
