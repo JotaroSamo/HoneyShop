@@ -17,6 +17,10 @@
       <mat-menu #userMenu="matMenu">
         <button mat-menu-item routerLink="/profile">Профиль</button>
         <button mat-menu-item routerLink="/settings">Настройки</button>
+        @if (IsManagerOrAdmin()) 
+        {
+          <button mat-menu-item  routerLink="product/create">Создать продукт</button>
+        }
         <button mat-menu-item (click)="logout()">Выход</button>
       </mat-menu>
     }

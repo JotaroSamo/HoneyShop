@@ -1,0 +1,90 @@
+/* Карточка формы */
+mat-card {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  }
+  
+  /* Заголовок */
+  mat-card h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Форма */
+  .form_create {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Поля ввода */
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  /* Ошибки */
+  mat-error {
+    color: #d32f2f;
+    font-size: 0.875rem;
+  }
+  
+  .file-list {
+    margin-top: 10px;
+  }
+  
+  .file-list p {
+    font-weight: bold;
+  }
+  
+  .file-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .file-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+  
+  .file-list li span {
+    flex: 1;
+  }
+  
+  .file-list button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: red;
+  }
+  .input_file {
+
+    display: flex;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+    font-weight: 500;
+    justify-content: center;
+    margin-bottom: 15px;
+  
+
+  }
+  

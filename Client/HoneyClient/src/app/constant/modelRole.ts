@@ -1,6 +1,6 @@
 export const UserRole = "Пользователь";
 export const ManagerRole = "Менеджер";
-export const AdministratorRole = "Пользователь";
+export const AdministratorRole = "Админ";
 
 export const AMU = [UserRole, ManagerRole, AdministratorRole];
 
