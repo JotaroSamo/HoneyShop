@@ -26,7 +26,9 @@ public class CreateProductCommandHandler : ICommandHandler<CreateProductCommand,
             Description = request.CreateProduct.Description,
             Price = request.CreateProduct.Price,
             StatusId = (int)request.CreateProduct.Status,
-            IsRemoved = false
+            IsRemoved = false,
+            CreatedAt = DateTime.UtcNow,
+            UpdatedAt = DateTime.UtcNow
         };
         var publicProduct = await _productService.Create(product, request.CreateProduct.Files);
         _logger.LogInformation("Продукт с именем {ProductName} успешно создан", request.CreateProduct.Name);
